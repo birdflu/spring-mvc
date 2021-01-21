@@ -8,7 +8,8 @@
 <body>
 <a th:text="${person.getName()}">VALUE</a>
 <a th:text="${person.getId()}">VALUE</a>
-
+<a th:text="${person.getAge()}">VALUE</a>
+<a th:text="${person.getEmail()}">VALUE</a>
 <a th:href="@{/people/{id}/edit(id=${person.getId()})}">Edit</a>
 <form th:method="DELETE" th:action="@{/people/{id}(id=${person.getId()})}">
     <input type="submit" value="Delete"/>
